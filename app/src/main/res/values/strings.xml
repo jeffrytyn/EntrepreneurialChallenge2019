@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">CarbonFootprint</string>
-    <string name="greenlife">GreenLife</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="title_activity_home_screen">HomeScreen</string>
-</resources>

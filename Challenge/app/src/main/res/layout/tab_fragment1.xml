@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/electric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="52dp"
+        android:text="Electricity"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="17dp"
+        tools:fontFamily="@font/cantarell" />
+
+    <TextView
+        android:id="@+id/Vehic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/electric"
+        android:layout_alignLeft="@+id/electric"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="220dp"
+        android:text="Vehicles"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="17dp"
+        tools:fontFamily="@font/cantarell" />
+
+    <TextView
+        android:id="@+id/Meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Vehic"
+        android:layout_alignLeft="@+id/Vehic"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="168dp"
+        android:text="Meals"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="17dp"
+        tools:fontFamily="@font/cantarell" />
+
+    <ImageView
+        android:id="@+id/power"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/electric"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="-1dp"
+        android:src="@drawable/power" />
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/Vehic"
+        android:layout_alignEnd="@+id/power"
+        android:layout_alignRight="@+id/power"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="217dp"
+        android:src="@drawable/car" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/car"
+        android:layout_alignRight="@+id/car"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="66dp"
+        android:src="@drawable/food" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:text="(Daily Measurements)"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        tools:fontFamily="@font/cantarell" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/electric"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:text="kWh of power:" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Vehic"
+        android:layout_alignStart="@+id/textView11"
+        android:text="Gallons of gasoline:" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Meal"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginTop="-168dp"
+        android:text="Average Impact:" />
+
+    <EditText
+        android:id="@+id/powerIn"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/power"
+        android:layout_alignStart="@+id/VehiclesIn"
+        android:layout_alignLeft="@+id/VehiclesIn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="-115dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/VehiclesIn"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText12"
+        android:layout_alignLeft="@+id/editText12"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+        android:ems="10"
+        android:inputType="number"
+        android:text="7 kg CO2" />
+
+    <TextView
+        android:id="@+id/powerOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/VehiclesIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginBottom="56dp"
+        android:textSize="15dp"
+        android:layout_toEndOf="@+id/buttonP"
+        android:layout_toRightOf="@+id/buttonP" />
+
+    <TextView
+        android:id="@+id/VehiclesOut"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VehiclesIn"
+        android:layout_alignStart="@+id/powerOut"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp" />
+
+    <Button
+        android:id="@+id/buttonP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignBottom="@+id/power"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginBottom="2dp"
+        android:text="Impact" />
+
+    <Button
+        android:id="@+id/buttonV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Meal"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="25dp"
+        android:text="Impact" />
+
+</RelativeLayout>
