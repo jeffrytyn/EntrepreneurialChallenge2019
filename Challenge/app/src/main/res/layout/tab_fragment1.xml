@@ -174,33 +174,25 @@
 
     <TextView
         android:id="@+id/powerOut"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/VehiclesIn"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginEnd="95dp"
-        android:layout_marginRight="95dp"
-        android:layout_marginBottom="56dp"
-        android:textSize="15dp"
-        android:layout_toEndOf="@+id/buttonP"
-        android:layout_toRightOf="@+id/buttonP" />
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="61dp"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/VehiclesOut"
-        android:textSize="15dp"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/VehiclesIn"
         android:layout_alignStart="@+id/powerOut"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="37dp"
-        android:layout_marginEnd="95dp"
-        android:layout_marginRight="95dp" />
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/buttonP"
